@@ -8,12 +8,12 @@ const model = {
     users: [
         { username: 'per', name: 'Per', password: '123' },
         { username: 'pål', name: 'Pål', password: '123' },
-        { username: 'espen', name: 'Espen', password: '123', isAdmin: true },
+        { username: 'espen', name: 'Espen', password: '123', isAdmin: true,
     ],
 
     inputs: {
         createPoll: {
-            pollId: null,
+            pollId: 3,
             newAlternative: '',
             question: 'Hvem er den tøffeste læreren ved GET Academy?',
             options: ['Geir', 'Eskil', 'Terje'],
@@ -21,7 +21,46 @@ const model = {
         },
     },
 
-    polls: [],
+    polls: [
+
+        {
+            pollId: 1,
+            question: 'Hvem er den tøffeste læreren ved GET Academy?',
+            options: ['Geir', 'Eskil', 'Terje'],
+            usersCanAddAlternatives: true,
+        },
+
+        {
+            pollId: 2,
+            question: 'Hvem er den tøffeste læreren ved GET Academy?',
+            options: ['Geir', 'Eskil', 'Terje'],
+            usersCanAddAlternatives: true,
+        },
+        
+        {
+            pollId: 3,
+            question: 'Hvem er den tøffeste læreren ved GET Academy?',
+            options: ['Geir', 'Eskil', 'Terje'],
+            usersCanAddAlternatives: true,
+        },
+
+    ],
+
+    // votes: {   // votes.Geir - votes['Geir']
+    //     'Geir' : 0,
+    //     'Eskil' : 0,
+    //     'Terje' : 0,
+    // },
+
+    votes: [
+
+        { pollId: 1, vote: 'Geir', user: 'per', },
+        { pollId: 1, vote: 'Geir', user: 'pål',},
+        { pollId: 1, vote: 'Geir', user: 'espen',},
+        { pollId: 2, vote: 'Geir', user: 'per', },
+        { pollId: 2, vote: 'Geir', user: 'pål',},
+
+    ],
 };
 
 /*
