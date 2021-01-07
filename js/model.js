@@ -8,7 +8,7 @@ const model = {
     users: [
         { username: 'per', name: 'Per', password: '123' },
         { username: 'pål', name: 'Pål', password: '123' },
-        { username: 'espen', name: 'Espen', password: '123', isAdmin: true,
+        { username: 'espen', name: 'Espen', password: '123', isAdmin: true},
     ],
 
     inputs: {
@@ -36,7 +36,7 @@ const model = {
             options: ['Geir', 'Eskil', 'Terje'],
             usersCanAddAlternatives: true,
         },
-        
+
         {
             pollId: 3,
             question: 'Hvem er den tøffeste læreren ved GET Academy?',
@@ -55,10 +55,10 @@ const model = {
     votes: [
 
         { pollId: 1, vote: 'Geir', user: 'per', },
-        { pollId: 1, vote: 'Geir', user: 'pål',},
-        { pollId: 1, vote: 'Geir', user: 'espen',},
+        { pollId: 1, vote: 'Geir', user: 'pål', },
+        { pollId: 1, vote: 'Geir', user: 'espen', },
         { pollId: 2, vote: 'Geir', user: 'per', },
-        { pollId: 2, vote: 'Geir', user: 'pål',},
+        { pollId: 2, vote: 'Geir', user: 'pål', },
 
     ],
 };
