@@ -8,16 +8,19 @@ const model = {
     users: [
         { username: 'per', name: 'Per', password: '123' },
         { username: 'pål', name: 'Pål', password: '123' },
-        { username: 'espen', name: 'Espen', password: '123', isAdmin: true},
+        { username: 'espen', name: 'Espen', password: '123', isAdmin: true },
     ],
 
     inputs: {
         createPoll: {
-            pollId: 3,
+            pollId: null,
             newAlternative: '',
-            question: 'Hvem er den tøffeste læreren ved GET Academy?',
-            options: ['Geir', 'Eskil', 'Terje'],
+            question: 'Hva er yndlingsfaregn din?',
+            options: ['Rød'],
             usersCanAddAlternatives: true,
+        },
+        votePage: {
+
         },
     },
 
@@ -32,14 +35,14 @@ const model = {
 
         {
             pollId: 2,
-            question: 'Hvem er den tøffeste læreren ved GET Academy?',
+            question: 'Hvem er den sprekeste læreren ved GET Academy?',
             options: ['Geir', 'Eskil', 'Terje'],
             usersCanAddAlternatives: true,
         },
 
         {
             pollId: 3,
-            question: 'Hvem er den tøffeste læreren ved GET Academy?',
+            question: 'Hvem er den kuleste læreren ved GET Academy?',
             options: ['Geir', 'Eskil', 'Terje'],
             usersCanAddAlternatives: true,
         },

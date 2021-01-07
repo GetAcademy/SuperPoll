@@ -7,3 +7,10 @@ function getCurrentPoll() {
     }
     return null;
 }
+
+function findById(list, id) {
+    for (let obj of list) {
+        if (obj.id === id) return obj;
+    }
+    return null;
+}
